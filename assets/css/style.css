@@ -1,0 +1,89 @@
+/* Palette de couleurs Marrakech */
+:root {
+  --marron-chaud: #8B5E3C;
+  --creme: #F5EBDD;
+  --sable: #D2B48C;
+  --vert-pistache: #93C572;
+  --terracotta: #E27D60;
+  --bleu-majorelle: #6050DC;
+}
+
+/* Réinitialisation des marges et padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corps du site */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--creme);
+  color: var(--marron-chaud);
+}
+
+/* En-tête */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--bleu-majorelle);
+}
+
+header .logo img {
+  max-height: 60px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: var(--vert-pistache);
+}
+
+/* Section d'introduction */
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: var(--sable);
+}
+
+.intro-text {
+  max-width: 50%;
+}
+
+.intro-text h1 {
+  font-size: 3rem;
+  color: var(--marron-chaud);
+}
+
+.intro-text p {
+  font-size: 1.2rem;
+  color: var(--terracotta);
+  margin-top: 20px;
+}
+
+.intro-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Pied de page */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--bleu-majorelle);
+  color: white;
+}
